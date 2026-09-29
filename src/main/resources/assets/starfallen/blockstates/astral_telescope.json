@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "starfallen:block/astral_telescope"
+    },
+    "facing=east": {
+      "model": "starfallen:block/astral_telescope",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "starfallen:block/astral_telescope",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "starfallen:block/astral_telescope",
+      "y": 270
+    }
+  }
+}

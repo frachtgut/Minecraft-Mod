@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "item": "starfallen:chiseled_void_bricks"
+    },
+    "title": {
+      "translate": "advancements.starfallen.the_sanctum.title"
+    },
+    "description": {
+      "translate": "advancements.starfallen.the_sanctum.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "entered": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "starfallen:sanctum"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "starfallen:stargazer",
+  "requirements": [
+    [
+      "entered"
+    ]
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "BCB",
+    " M ",
+    " M "
+  ],
+  "key": {
+    "B": {
+      "item": "starfallen:meteoric_iron_block"
+    },
+    "C": {
+      "item": "starfallen:molten_core"
+    },
+    "M": {
+      "item": "starfallen:meteoric_iron_ingot"
+    }
+  },
+  "result": {
+    "item": "starfallen:meteor_hammer",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "starfallen:voidsteel_ingot"
+    }
+  },
+  "result": {
+    "item": "starfallen:voidsteel_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " AS",
+    "F S",
+    " AS"
+  ],
+  "key": {
+    "A": {
+      "item": "starfallen:astral_alloy_ingot"
+    },
+    "S": {
+      "item": "minecraft:string"
+    },
+    "F": {
+      "item": "starfallen:star_fragment"
+    }
+  },
+  "result": {
+    "item": "starfallen:constellation_bow",
+    "count": 1
+  }
+}

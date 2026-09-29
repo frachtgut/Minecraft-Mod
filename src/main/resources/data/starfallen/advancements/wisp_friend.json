@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "starfallen:stardust"
+    },
+    "title": {
+      "translate": "advancements.starfallen.wisp_friend.title"
+    },
+    "description": {
+      "translate": "advancements.starfallen.wisp_friend.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tamed": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "starfallen:root",
+  "requirements": [
+    [
+      "tamed"
+    ]
+  ]
+}

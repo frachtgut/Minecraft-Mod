@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " F ",
+    "FTF",
+    " H "
+  ],
+  "key": {
+    "F": {
+      "item": "starfallen:star_fragment"
+    },
+    "T": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "H": {
+      "item": "starfallen:heart_of_astraeon"
+    }
+  },
+  "result": {
+    "item": "starfallen:totem_of_the_fallen_star",
+    "count": 1
+  }
+}

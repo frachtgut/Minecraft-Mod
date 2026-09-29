@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "starfallen:meteoric_iron_ingot",
+    "starfallen:astral_alloy_ingot",
+    "starfallen:voidsteel_ingot"
+  ]
+}

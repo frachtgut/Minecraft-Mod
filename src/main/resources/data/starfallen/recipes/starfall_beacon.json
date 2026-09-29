@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " F ",
+    "DAD",
+    "MMM"
+  ],
+  "key": {
+    "F": {
+      "item": "starfallen:star_fragment"
+    },
+    "D": {
+      "item": "starfallen:stardust"
+    },
+    "A": {
+      "item": "starfallen:astral_alloy_ingot"
+    },
+    "M": {
+      "item": "starfallen:meteoric_iron_ingot"
+    }
+  },
+  "result": {
+    "item": "starfallen:starfall_beacon",
+    "count": 1
+  }
+}

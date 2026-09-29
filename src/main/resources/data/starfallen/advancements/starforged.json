@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "starfallen:astral_alloy_ingot"
+    },
+    "title": {
+      "translate": "advancements.starfallen.starforged.title"
+    },
+    "description": {
+      "translate": "advancements.starfallen.starforged.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "alloy": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "starfallen:astral_alloy_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "starfallen:iron_from_the_sky",
+  "requirements": [
+    [
+      "alloy"
+    ]
+  ]
+}

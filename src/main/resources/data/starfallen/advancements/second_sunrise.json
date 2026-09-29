@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "starfallen:totem_of_the_fallen_star"
+    },
+    "title": {
+      "translate": "advancements.starfallen.second_sunrise.title"
+    },
+    "description": {
+      "translate": "advancements.starfallen.second_sunrise.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "nova": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "starfallen:starfallen",
+  "requirements": [
+    [
+      "nova"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

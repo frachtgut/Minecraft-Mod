@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "starfallen:void_bricks"
+    },
+    {
+      "item": "starfallen:void_bricks"
+    },
+    {
+      "item": "starfallen:void_bricks"
+    },
+    {
+      "item": "starfallen:void_bricks"
+    },
+    {
+      "item": "starfallen:stardust"
+    }
+  ],
+  "result": {
+    "item": "starfallen:starfield_tiles",
+    "count": 4
+  }
+}

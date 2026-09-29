@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "starfallen:astral_telescope"
+    },
+    "title": {
+      "translate": "advancements.starfallen.stargazer.title"
+    },
+    "description": {
+      "translate": "advancements.starfallen.stargazer.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "gazed": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "starfallen:root",
+  "requirements": [
+    [
+      "gazed"
+    ]
+  ]
+}

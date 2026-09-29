@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "entries": [
+    "starfallen:inject_simple_dungeon",
+    "starfallen:inject_abandoned_mineshaft",
+    "starfallen:inject_desert_pyramid",
+    "starfallen:inject_jungle_temple",
+    "starfallen:inject_shipwreck_treasure",
+    "starfallen:inject_ruined_portal",
+    "starfallen:inject_pillager_outpost",
+    "starfallen:inject_igloo_chest",
+    "starfallen:inject_stronghold_library",
+    "starfallen:inject_stronghold_corridor",
+    "starfallen:inject_ancient_city",
+    "starfallen:inject_woodland_mansion",
+    "starfallen:inject_end_city_treasure",
+    "starfallen:inject_bastion_treasure",
+    "starfallen:inject_buried_treasure"
+  ]
+}

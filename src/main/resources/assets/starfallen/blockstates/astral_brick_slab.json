@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "starfallen:block/astral_brick_slab"
+    },
+    "type=top": {
+      "model": "starfallen:block/astral_brick_slab_top"
+    },
+    "type=double": {
+      "model": "starfallen:block/astral_bricks"
+    }
+  }
+}

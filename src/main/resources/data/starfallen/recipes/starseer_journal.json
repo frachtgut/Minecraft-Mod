@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "starfallen:stardust"
+    }
+  ],
+  "result": {
+    "item": "starfallen:starseer_journal",
+    "count": 1
+  }
+}

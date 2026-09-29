@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "starfallen:astral_bricks"
+    }
+  },
+  "result": {
+    "item": "starfallen:astral_brick_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "decorations",
+  "pattern": [
+    "GSG",
+    " A ",
+    "I I"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "S": {
+      "item": "minecraft:spyglass"
+    },
+    "A": {
+      "item": "starfallen:astral_alloy_ingot"
+    },
+    "I": {
+      "item": "starfallen:meteoric_iron_ingot"
+    }
+  },
+  "result": {
+    "item": "starfallen:astral_telescope",
+    "count": 1
+  }
+}

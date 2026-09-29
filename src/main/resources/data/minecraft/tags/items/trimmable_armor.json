@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "starfallen:meteoric_helmet",
+    "starfallen:meteoric_chestplate",
+    "starfallen:meteoric_leggings",
+    "starfallen:meteoric_boots",
+    "starfallen:starforged_helmet",
+    "starfallen:starforged_chestplate",
+    "starfallen:starforged_leggings",
+    "starfallen:starforged_boots",
+    "starfallen:voidwalker_helmet",
+    "starfallen:voidwalker_chestplate",
+    "starfallen:voidwalker_leggings",
+    "starfallen:voidwalker_boots"
+  ]
+}

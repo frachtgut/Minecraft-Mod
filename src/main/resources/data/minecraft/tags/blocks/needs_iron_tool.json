@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "starfallen:meteoric_iron_ore",
+    "starfallen:meteoric_iron_block",
+    "starfallen:astral_alloy_block",
+    "starfallen:fallen_star"
+  ]
+}

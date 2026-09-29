@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "starfallen:star_fragment"
+    }
+  },
+  "result": {
+    "item": "starfallen:fallen_star",
+    "count": 1
+  }
+}

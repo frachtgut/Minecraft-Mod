@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "starfallen:halo_of_the_fallen_star"
+    },
+    "title": {
+      "translate": "advancements.starfallen.crown_of_stars.title"
+    },
+    "description": {
+      "translate": "advancements.starfallen.crown_of_stars.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "halo": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "starfallen:halo_of_the_fallen_star"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "starfallen:starfallen",
+  "requirements": [
+    [
+      "halo"
+    ]
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "starfallen:stellar_egg"
+    },
+    "title": {
+      "translate": "advancements.starfallen.comet_rider.title"
+    },
+    "description": {
+      "translate": "advancements.starfallen.comet_rider.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tamed": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "starfallen:wisp_friend",
+  "requirements": [
+    [
+      "tamed"
+    ]
+  ],
+  "rewards": {
+    "experience": 50
+  }
+}

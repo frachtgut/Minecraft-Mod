@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "starfallen:block/flame_jet"
+    },
+    "facing=east": {
+      "model": "starfallen:block/flame_jet",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "starfallen:block/flame_jet",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "starfallen:block/flame_jet",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "starfallen:block/flame_jet",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "starfallen:block/flame_jet",
+      "x": 90
+    }
+  }
+}

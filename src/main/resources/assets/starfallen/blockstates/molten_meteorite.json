@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "permanent=false": {
+      "model": "starfallen:block/molten_meteorite"
+    },
+    "permanent=true": {
+      "model": "starfallen:block/molten_meteorite"
+    }
+  }
+}

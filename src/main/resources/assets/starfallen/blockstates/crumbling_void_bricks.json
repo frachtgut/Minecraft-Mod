@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "triggered=false": {
+      "model": "starfallen:block/crumbling_void_bricks"
+    },
+    "triggered=true": {
+      "model": "starfallen:block/crumbling_void_bricks"
+    }
+  }
+}

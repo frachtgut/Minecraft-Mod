@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "starfallen:fallen_star"
+    },
+    "title": {
+      "translate": "advancements.starfallen.root.title"
+    },
+    "description": {
+      "translate": "advancements.starfallen.root.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "starfallen:textures/block/starfield_tiles.png"
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "requirements": [
+    [
+      "tick"
+    ]
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "starfallen:block/starfield_tiles"
+    }
+  }
+}

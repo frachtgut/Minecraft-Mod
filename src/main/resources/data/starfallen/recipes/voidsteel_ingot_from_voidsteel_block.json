@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "starfallen:voidsteel_block"
+    }
+  ],
+  "result": {
+    "item": "starfallen:voidsteel_ingot",
+    "count": 9
+  }
+}

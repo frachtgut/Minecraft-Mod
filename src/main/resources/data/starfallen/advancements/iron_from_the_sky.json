@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "starfallen:raw_meteoric_iron"
+    },
+    "title": {
+      "translate": "advancements.starfallen.iron_from_the_sky.title"
+    },
+    "description": {
+      "translate": "advancements.starfallen.iron_from_the_sky.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "starfallen:raw_meteoric_iron"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "starfallen:look_up",
+  "requirements": [
+    [
+      "iron"
+    ]
+  ]
+}

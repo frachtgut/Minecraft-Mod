@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "BBB",
+    "BSB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:stone_bricks"
+    },
+    "S": {
+      "item": "starfallen:stardust"
+    }
+  },
+  "result": {
+    "item": "starfallen:astral_bricks",
+    "count": 8
+  }
+}
