@@ -178,6 +178,8 @@ There is a full **Starfallen** advancement tab with 19 goals, from *Look Up* and
 ## Screenshots
 *(Real in-game captures from the test runs.)*
 
+![Overview](docs/images/overview.jpg)
+
 | | |
 |---|---|
 | ![Starfall sky](docs/images/starfall_sky.jpg) *A Starfall night: shooting stars and the nebula band* | ![Creatures](docs/images/creatures.jpg) *Void Stalker, Nebula Jelly, Starseer, High Starseer, Astral Mimic, Comet Ray* |
