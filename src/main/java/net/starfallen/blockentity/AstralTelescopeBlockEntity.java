@@ -2,6 +2,7 @@ package net.starfallen.blockentity;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.SectionPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.nbt.NbtUtils;
@@ -14,6 +15,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.MapItem;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.chunk.ChunkStatus;
+import net.minecraft.world.level.levelgen.structure.StructureStart;
 import net.minecraft.world.level.saveddata.maps.MapDecoration;
 import net.minecraft.world.level.saveddata.maps.MapItemSavedData;
 import net.starfallen.event.StarfallManager;
@@ -22,6 +25,7 @@ import net.starfallen.registry.ModBlockEntities;
 import net.starfallen.registry.ModSounds;
 import net.starfallen.registry.ModWorldgen;
 import net.starfallen.util.SFUtil;
+import net.starfallen.worldgen.structure.BlueprintPiece;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -42,6 +46,7 @@ public class AstralTelescopeBlockEntity extends BlockEntity {
 
         if (!charted.contains(player.getUUID())) {
             BlockPos target = level.findNearestMapStructure(ModWorldgen.ON_SANCTUM_MAPS, worldPosition, 100, false);
+            if (target != null) target = entranceOf(level, target);
             if (target != null) {
                 ItemStack map = MapItem.create(level, target.getX(), target.getZ(), (byte) 2, true, true);
                 MapItem.renderBiomePreviewMap(level, map);
@@ -67,6 +72,18 @@ public class AstralTelescopeBlockEntity extends BlockEntity {
             player.displayClientMessage(Component.translatable("message.starfallen.telescope_meteor").withStyle(ChatFormatting.GOLD), false);
             StarfallManager.spawnMeteorInView(level, player, 0.35F);
         }
+    }
+
+    /** The locate result is the structure's start chunk; point the chart at the obelisk instead. */
+    private static BlockPos entranceOf(ServerLevel level, BlockPos located) {
+        var chunk = level.getChunk(SectionPos.blockToSectionCoord(located.getX()), SectionPos.blockToSectionCoord(located.getZ()),
+                ChunkStatus.STRUCTURE_STARTS);
+        for (StructureStart start : chunk.getAllStarts().values()) {
+            if (start.isValid() && !start.getPieces().isEmpty() && start.getPieces().get(0) instanceof BlueprintPiece piece) {
+                return piece.entrance();
+            }
+        }
+        return located;
     }
 
     @Override

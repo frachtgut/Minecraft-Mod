@@ -453,6 +453,11 @@ final class SanctumBuilder {
             if (d < 1.6) bp.set(x, 2, z, s(ModBlocks.VOID_BRICKS.get()));
         }
         bp.set(0, 3, ARENA_Z, s(ModBlocks.STAR_ALTAR.get()));
+        // Starlight set into the floor keeps the arena lit, so nothing spawns on the battlefield
+        for (int k = 0; k < 8; k++) {
+            double a = k * Math.PI / 4;
+            bp.set((int) Math.round(Math.cos(a) * 8), 0, ARENA_Z + (int) Math.round(Math.sin(a) * 8), s(ModBlocks.STARLIGHT_LAMP.get()));
+        }
         // Pillars of cover (the void beam and the nova cannot pass through them)
         for (int k = 0; k < 8; k++) {
             double a = Math.PI / 8 + k * Math.PI / 4;

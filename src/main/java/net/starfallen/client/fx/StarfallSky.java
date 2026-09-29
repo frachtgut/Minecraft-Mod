@@ -77,7 +77,7 @@ public final class StarfallSky {
         float eTarget = bossNear ? 1.0F : 0.0F;
         eclipse += (eTarget - eclipse) * 0.03F;
         STREAKS.removeIf(s -> ticks - s.born > s.life);
-        if (intensity > 0.05F && RANDOM.nextFloat() < 0.18F * intensity) {
+        if (intensity > 0.05F && RANDOM.nextFloat() < 0.25F * intensity) {
             double yaw = RANDOM.nextDouble() * Math.PI * 2;
             double pitch = Math.toRadians(25 + RANDOM.nextDouble() * 55);
             Vec3 start = new Vec3(Math.cos(yaw) * Math.cos(pitch), Math.sin(pitch), Math.sin(yaw) * Math.cos(pitch));
@@ -107,26 +107,31 @@ public final class StarfallSky {
         Tesselator tess = Tesselator.getInstance();
         BufferBuilder buf = tess.getBuilder();
 
+        RenderSystem.disableCull();
         if (in > 0.01F) {
-            // Nebula band
+            // A galactic band of nebula arching high across the sky
             RenderSystem.setShaderTexture(0, NEBULA);
             pose.pushPose();
-            pose.mulPose(Axis.YP.rotationDegrees(ticks * 0.01F + partial * 0.01F + 30F));
-            pose.mulPose(Axis.XP.rotationDegrees(-20F));
+            pose.mulPose(Axis.YP.rotationDegrees((ticks + partial) * 0.01F + 30F));
+            pose.mulPose(Axis.XP.rotationDegrees(24F));
             Matrix4f m = pose.last().pose();
             buf.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_TEX_COLOR);
-            float a = 0.55F * in * nightFactor;
-            float scroll = (ticks + partial) * 0.0002F;
-            int segs = 16;
+            float a = 0.95F * in * nightFactor;
+            float scroll = (ticks + partial) * 0.00015F;
+            int segs = 48;
+            float r = 100.0F, half = 26.0F;
             for (int i = 0; i < segs; i++) {
                 double a0 = i * Math.PI * 2 / segs, a1 = (i + 1) * Math.PI * 2 / segs;
-                float u0 = i / (float) segs * 2 + scroll, u1 = (i + 1) / (float) segs * 2 + scroll;
-                float r = 100;
-                float y0 = 25, y1 = 60;
-                vertex(buf, m, (float) Math.cos(a0) * r, y0, (float) Math.sin(a0) * r, u0, 1, 1, 1, 1, 0);
-                vertex(buf, m, (float) Math.cos(a1) * r, y0, (float) Math.sin(a1) * r, u1, 1, 1, 1, 1, 0);
-                vertex(buf, m, (float) Math.cos(a1) * r * 0.7F, y1, (float) Math.sin(a1) * r * 0.7F, u1, 0, 1, 1, 1, a);
-                vertex(buf, m, (float) Math.cos(a0) * r * 0.7F, y1, (float) Math.sin(a0) * r * 0.7F, u0, 0, 1, 1, 1, a);
+                float x0 = (float) Math.cos(a0) * r, y0 = (float) Math.sin(a0) * r;
+                float x1 = (float) Math.cos(a1) * r, y1 = (float) Math.sin(a1) * r;
+                float al0 = a * Mth.clamp((float) Math.sin(a0) * 2.5F, 0, 1);
+                float al1 = a * Mth.clamp((float) Math.sin(a1) * 2.5F, 0, 1);
+                if (al0 <= 0.001F && al1 <= 0.001F) continue;
+                float u0 = i / (float) segs * 3 + scroll, u1 = (i + 1) / (float) segs * 3 + scroll;
+                vertex(buf, m, x0, y0, -half, u0, 0, 1, 1, 1, al0);
+                vertex(buf, m, x1, y1, -half, u1, 0, 1, 1, 1, al1);
+                vertex(buf, m, x1, y1, half, u1, 1, 1, 1, 1, al1);
+                vertex(buf, m, x0, y0, half, u0, 1, 1, 1, 1, al0);
             }
             BufferUploader.drawWithShader(buf.end());
             pose.popPose();
@@ -142,7 +147,7 @@ public final class StarfallSky {
                 Vec3 head = s.start.add(s.dir.scale(age * s.speed)).normalize().scale(95);
                 Vec3 tail = s.start.add(s.dir.scale(age * s.speed - s.length)).normalize().scale(95);
                 Vec3 along = head.subtract(tail);
-                Vec3 perp = along.cross(head).normalize().scale(0.7);
+                Vec3 perp = along.cross(head).normalize().scale(0.9);
                 quad(buf, m2, tail.subtract(perp), tail.add(perp), head.add(perp), head.subtract(perp), fade);
             }
             BufferUploader.drawWithShader(buf.end());
@@ -182,6 +187,7 @@ public final class StarfallSky {
             pose.popPose();
         }
 
+        RenderSystem.enableCull();
         RenderSystem.depthMask(true);
         RenderSystem.defaultBlendFunc();
         RenderSystem.disableBlend();

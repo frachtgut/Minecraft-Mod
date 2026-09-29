@@ -27,3 +27,7 @@ forge*changelog.txt
 # python
 __pycache__/
 *.pyc
+
+# local test runs
+run-client
+run-data

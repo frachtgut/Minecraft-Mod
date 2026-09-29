@@ -615,7 +615,8 @@ public class AstraeonEntity extends Monster {
                 || source.is(DamageTypes.CRAMMING) || source.is(DamageTypeTags.IS_FIRE)) return false;
         // Stunned after a slam: takes extra damage
         if (s == SLAM && stateTicks > 40) amount *= 1.3F;
-        amount = Math.min(amount, 40.0F);
+        // No single blow can deal more than 40 - except commands like /kill.
+        if (!source.is(DamageTypeTags.BYPASSES_INVULNERABILITY)) amount = Math.min(amount, 40.0F);
         boolean hurt = super.hurt(source, amount);
         if (hurt && !level().isClientSide && !isEnraged() && s != PHASE_SHIFT && getHealth() <= getMaxHealth() * 0.5F && getHealth() > 0) {
             setState(PHASE_SHIFT);

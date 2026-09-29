@@ -36,9 +36,13 @@ public final class RenderUtil {
         vertex(vc, m, n, -s, 0, -s, 0, 0, r, g, b, a);
     }
 
+    /**
+     * Emits one full-bright vertex. The colour is premultiplied by alpha because the glow render types blend
+     * additively (ONE, ONE) and would otherwise ignore the alpha fade.
+     */
     public static void vertex(VertexConsumer vc, Matrix4f m, Matrix3f n, float x, float y, float z, float u, float v,
                               float r, float g, float b, float a) {
-        vc.vertex(m, x, y, z).color(r, g, b, a).uv(u, v).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(FULL_BRIGHT)
+        vc.vertex(m, x, y, z).color(r * a, g * a, b * a, a).uv(u, v).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(FULL_BRIGHT)
                 .normal(n, 0.0F, 1.0F, 0.0F).endVertex();
     }
 }

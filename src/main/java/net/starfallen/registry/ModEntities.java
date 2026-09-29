@@ -40,7 +40,7 @@ public final class ModEntities {
     public static final RegistryObject<EntityType<CometRayEntity>> COMET_RAY = ENTITIES.register("comet_ray",
             () -> EntityType.Builder.of(CometRayEntity::new, MobCategory.CREATURE).sized(2.4F, 0.7F).clientTrackingRange(10).build("comet_ray"));
     public static final RegistryObject<EntityType<AstraeonEntity>> ASTRAEON = ENTITIES.register("astraeon",
-            () -> EntityType.Builder.of(AstraeonEntity::new, MobCategory.MONSTER).sized(3.2F, 4.6F).fireImmune().clientTrackingRange(12).build("astraeon"));
+            () -> EntityType.Builder.of(AstraeonEntity::new, MobCategory.MONSTER).sized(4.8F, 6.9F).fireImmune().clientTrackingRange(12).build("astraeon"));
 
     // ---- Projectiles & effects ----
     public static final RegistryObject<EntityType<MeteorEntity>> METEOR = ENTITIES.register("meteor",

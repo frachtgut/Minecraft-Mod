@@ -164,6 +164,7 @@ public class StarseerEntity extends Monster {
         if (meteorCooldown > 0) meteorCooldown--;
         if (blinkCooldown > 0) blinkCooldown--;
         if (wardTicks > 0 && --wardTicks == 0) entityData.set(WARDED, false);
+        if (isElite() && tickCount % 10 == 0) updateBossBar();
         if (bossEvent != null) bossEvent.setProgress(getHealth() / getMaxHealth());
 
         LivingEntity target = getTarget();
@@ -251,14 +252,15 @@ public class StarseerEntity extends Monster {
         return super.hurt(source, amount);
     }
 
-    @Override
-    public void startSeenByPlayer(ServerPlayer player) {
-        super.startSeenByPlayer(player);
-        if (isElite()) {
-            if (bossEvent == null) {
-                bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.YELLOW, BossEvent.BossBarOverlay.NOTCHED_6);
-            }
-            bossEvent.addPlayer(player);
+    /** The High Starseer's health bar is shown only to players who are close enough to be fighting it. */
+    private void updateBossBar() {
+        if (bossEvent == null) {
+            bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.YELLOW, BossEvent.BossBarOverlay.NOTCHED_6);
+        }
+        for (ServerPlayer p : ((ServerLevel) level()).players()) {
+            boolean near = p.isAlive() && !p.isSpectator() && p.distanceToSqr(this) < 28 * 28;
+            if (near) bossEvent.addPlayer(p);
+            else bossEvent.removePlayer(p);
         }
     }
 

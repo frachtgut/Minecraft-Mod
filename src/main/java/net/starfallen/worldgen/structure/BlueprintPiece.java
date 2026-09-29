@@ -35,6 +35,15 @@ public class BlueprintPiece extends StructurePiece {
         setOrientation(null);
     }
 
+    /** Where a visitor should arrive: the obelisk for the Sanctum, the tower for anything else. */
+    public BlockPos entrance() {
+        if ("sanctum".equals(kind)) {
+            BlockPos p = new Blueprint(origin, rotation, 0L).world(0, 0, SanctumBuilder.SHAFT_Z);
+            return new BlockPos(p.getX(), origin.getY() + param, p.getZ());
+        }
+        return origin;
+    }
+
     public BlueprintPiece(CompoundTag tag) {
         super(ModWorldgen.BLUEPRINT_PIECE.get(), tag);
         this.kind = tag.getString("Kind");

@@ -98,6 +98,8 @@ public final class AbilityHandler {
         }
     }
 
+    private static final double[] BLINK_LIFTS = {0.0, 0.05, 0.5, 1.0, 1.5, -0.5, -1.0};
+
     /** Teleports the player along their view up to {@code range} blocks. */
     public static boolean blink(ServerLevel level, ServerPlayer player, double range) {
         Vec3 eye = player.getEyePosition();
@@ -105,13 +107,17 @@ public final class AbilityHandler {
         BlockHitResult hit = level.clip(new ClipContext(eye, eye.add(look.scale(range)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, player));
         double dist = hit.getLocation().distanceTo(eye) - 0.7;
         Vec3 dest = null;
+        search:
         for (double d = dist; d > 1.0; d -= 0.5) {
-            Vec3 eyeAt = eye.add(look.scale(d));
-            Vec3 feet = eyeAt.subtract(0, player.getEyeHeight(), 0);
-            AABB box = player.getBoundingBox().move(feet.subtract(player.position()));
-            if (level.noCollision(player, box)) {
-                dest = feet;
-                break;
+            Vec3 feet = eye.add(look.scale(d)).subtract(0, player.getEyeHeight(), 0);
+            // A level gaze puts the feet a hair inside the floor: nudge the spot up (or down) until it fits.
+            for (double lift : BLINK_LIFTS) {
+                Vec3 spot = feet.add(0, lift, 0);
+                AABB box = player.getBoundingBox().move(spot.subtract(player.position()));
+                if (level.noCollision(player, box)) {
+                    dest = spot;
+                    break search;
+                }
             }
         }
         if (dest == null) return false;

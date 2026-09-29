@@ -24,10 +24,10 @@ public class AstraeonRenderer extends MobRenderer<AstraeonEntity, AstraeonModel>
     private static final ResourceLocation TEXTURE = Starfallen.id("textures/entity/astraeon.png");
     private static final ResourceLocation GLOW = Starfallen.id("textures/entity/astraeon_glow.png");
     private static final ResourceLocation BEAM = Starfallen.id("textures/entity/void_beam.png");
-    private static final float SCALE = 2.0F;
+    private static final float SCALE = 3.0F;
 
     public AstraeonRenderer(EntityRendererProvider.Context ctx) {
-        super(ctx, new AstraeonModel(ctx.bakeLayer(SFModelLayers.ASTRAEON)), 2.0F);
+        super(ctx, new AstraeonModel(ctx.bakeLayer(SFModelLayers.ASTRAEON)), 3.0F);
         addLayer(new GlowLayer<>(this, e -> GLOW, (e, p) -> {
             float pulse = 0.85F + 0.15F * Mth.sin((e.tickCount + p) * 0.15F);
             if (e.getState() == AstraeonEntity.DYING) return new float[]{1, 1, 1};
@@ -92,7 +92,7 @@ public class AstraeonRenderer extends MobRenderer<AstraeonEntity, AstraeonModel>
                 pose.mulPose(Axis.YP.rotation(yawRad));
                 pose.mulPose(Axis.XP.rotation(pitchRad));
                 pose.translate(-0.5, 0, -0.5);
-                float radius = firing ? 0.55F + 0.1F * Mth.sin((boss.tickCount + partial) * 1.3F) : 0.15F * charge;
+                float radius = firing ? 0.8F + 0.12F * Mth.sin((boss.tickCount + partial) * 1.3F) : 0.15F * charge;
                 BeaconRenderer.renderBeaconBeam(pose, buffers, BEAM, partial, 2.0F, time, 0, Math.max(1, (int) Math.ceil(len)),
                         boss.isEnraged() ? new float[]{1.0F, 0.35F, 0.55F} : new float[]{0.8F, 0.4F, 1.0F}, radius, radius * 2.2F);
                 pose.popPose();
