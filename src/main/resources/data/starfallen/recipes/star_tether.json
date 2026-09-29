@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "  M",
+    " DM",
+    "S  "
+  ],
+  "key": {
+    "M": {
+      "item": "starfallen:meteoric_iron_ingot"
+    },
+    "D": {
+      "item": "starfallen:stardust"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "starfallen:star_tether",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "starfallen:meteoric_iron_block",
+    "starfallen:astral_alloy_block",
+    "starfallen:voidsteel_block"
+  ]
+}

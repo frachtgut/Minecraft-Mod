@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:chest"
+    },
+    "title": {
+      "translate": "advancements.starfallen.surprise.title"
+    },
+    "description": {
+      "translate": "advancements.starfallen.surprise.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "bitten": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "starfallen:the_sanctum",
+  "requirements": [
+    [
+      "bitten"
+    ]
+  ]
+}

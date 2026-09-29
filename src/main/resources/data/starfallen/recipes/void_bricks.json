@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "BBB",
+    "BEB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:deepslate_bricks"
+    },
+    "E": {
+      "item": "starfallen:void_essence"
+    }
+  },
+  "result": {
+    "item": "starfallen:void_bricks",
+    "count": 8
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "starfallen:block/astral_pillar"
+    },
+    "axis=z": {
+      "model": "starfallen:block/astral_pillar_horizontal",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "starfallen:block/astral_pillar_horizontal",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

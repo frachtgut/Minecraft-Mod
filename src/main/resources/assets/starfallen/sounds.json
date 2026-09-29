@@ -1,0 +1,394 @@
+{
+  "meteor_fall": {
+    "sounds": [
+      {
+        "name": "starfallen:meteor_fall1",
+        "attenuation_distance": 128
+      },
+      {
+        "name": "starfallen:meteor_fall2",
+        "attenuation_distance": 128
+      }
+    ],
+    "subtitle": "subtitles.starfallen.meteor_fall"
+  },
+  "meteor_impact": {
+    "sounds": [
+      {
+        "name": "starfallen:meteor_impact1",
+        "attenuation_distance": 128
+      },
+      {
+        "name": "starfallen:meteor_impact2",
+        "attenuation_distance": 128
+      }
+    ],
+    "subtitle": "subtitles.starfallen.meteor_impact"
+  },
+  "starfall_begin": {
+    "sounds": [
+      "starfallen:starfall_begin"
+    ],
+    "subtitle": "subtitles.starfallen.starfall_begin"
+  },
+  "star_chime": {
+    "sounds": [
+      "starfallen:star_chime1",
+      "starfallen:star_chime2"
+    ],
+    "subtitle": "subtitles.starfallen.star_chime"
+  },
+  "wisp_ambient": {
+    "sounds": [
+      "starfallen:wisp_ambient1",
+      "starfallen:wisp_ambient2",
+      "starfallen:wisp_ambient3"
+    ],
+    "subtitle": "subtitles.starfallen.wisp_ambient"
+  },
+  "wisp_hurt": {
+    "sounds": [
+      "starfallen:wisp_hurt"
+    ],
+    "subtitle": "subtitles.starfallen.wisp_hurt"
+  },
+  "wisp_death": {
+    "sounds": [
+      "starfallen:wisp_death"
+    ],
+    "subtitle": "subtitles.starfallen.wisp_death"
+  },
+  "golem_ambient": {
+    "sounds": [
+      "starfallen:golem_ambient1",
+      "starfallen:golem_ambient2"
+    ],
+    "subtitle": "subtitles.starfallen.golem_ambient"
+  },
+  "golem_hurt": {
+    "sounds": [
+      "starfallen:golem_hurt1",
+      "starfallen:golem_hurt2"
+    ],
+    "subtitle": "subtitles.starfallen.golem_hurt"
+  },
+  "golem_death": {
+    "sounds": [
+      "starfallen:golem_death"
+    ],
+    "subtitle": "subtitles.starfallen.golem_death"
+  },
+  "golem_slam": {
+    "sounds": [
+      {
+        "name": "starfallen:golem_slam",
+        "attenuation_distance": 32
+      }
+    ],
+    "subtitle": "subtitles.starfallen.golem_slam"
+  },
+  "stalker_ambient": {
+    "sounds": [
+      "starfallen:stalker_ambient1",
+      "starfallen:stalker_ambient2"
+    ],
+    "subtitle": "subtitles.starfallen.stalker_ambient"
+  },
+  "stalker_scream": {
+    "sounds": [
+      {
+        "name": "starfallen:stalker_scream",
+        "attenuation_distance": 32
+      }
+    ],
+    "subtitle": "subtitles.starfallen.stalker_scream"
+  },
+  "stalker_hurt": {
+    "sounds": [
+      "starfallen:stalker_hurt"
+    ],
+    "subtitle": "subtitles.starfallen.stalker_hurt"
+  },
+  "stalker_death": {
+    "sounds": [
+      "starfallen:stalker_death"
+    ],
+    "subtitle": "subtitles.starfallen.stalker_death"
+  },
+  "jelly_ambient": {
+    "sounds": [
+      "starfallen:jelly_ambient1",
+      "starfallen:jelly_ambient2"
+    ],
+    "subtitle": "subtitles.starfallen.jelly_ambient"
+  },
+  "jelly_zap": {
+    "sounds": [
+      "starfallen:jelly_zap"
+    ],
+    "subtitle": "subtitles.starfallen.jelly_zap"
+  },
+  "starseer_ambient": {
+    "sounds": [
+      "starfallen:starseer_ambient1",
+      "starfallen:starseer_ambient2"
+    ],
+    "subtitle": "subtitles.starfallen.starseer_ambient"
+  },
+  "starseer_cast": {
+    "sounds": [
+      "starfallen:starseer_cast"
+    ],
+    "subtitle": "subtitles.starfallen.starseer_cast"
+  },
+  "starseer_hurt": {
+    "sounds": [
+      "starfallen:starseer_hurt"
+    ],
+    "subtitle": "subtitles.starfallen.starseer_hurt"
+  },
+  "starseer_death": {
+    "sounds": [
+      "starfallen:starseer_death"
+    ],
+    "subtitle": "subtitles.starfallen.starseer_death"
+  },
+  "mimic_reveal": {
+    "sounds": [
+      "starfallen:mimic_reveal"
+    ],
+    "subtitle": "subtitles.starfallen.mimic_reveal"
+  },
+  "mimic_chomp": {
+    "sounds": [
+      "starfallen:mimic_chomp"
+    ],
+    "subtitle": "subtitles.starfallen.mimic_chomp"
+  },
+  "ray_ambient": {
+    "sounds": [
+      {
+        "name": "starfallen:ray_ambient1",
+        "attenuation_distance": 32
+      },
+      {
+        "name": "starfallen:ray_ambient2",
+        "attenuation_distance": 32
+      }
+    ],
+    "subtitle": "subtitles.starfallen.ray_ambient"
+  },
+  "ray_boost": {
+    "sounds": [
+      "starfallen:ray_boost"
+    ],
+    "subtitle": "subtitles.starfallen.ray_boost"
+  },
+  "astraeon_roar": {
+    "sounds": [
+      {
+        "name": "starfallen:astraeon_roar",
+        "attenuation_distance": 96
+      }
+    ],
+    "subtitle": "subtitles.starfallen.astraeon_roar"
+  },
+  "astraeon_ambient": {
+    "sounds": [
+      {
+        "name": "starfallen:astraeon_ambient1",
+        "attenuation_distance": 48
+      },
+      {
+        "name": "starfallen:astraeon_ambient2",
+        "attenuation_distance": 48
+      }
+    ],
+    "subtitle": "subtitles.starfallen.astraeon_ambient"
+  },
+  "astraeon_hurt": {
+    "sounds": [
+      {
+        "name": "starfallen:astraeon_hurt1",
+        "attenuation_distance": 48
+      },
+      {
+        "name": "starfallen:astraeon_hurt2",
+        "attenuation_distance": 48
+      }
+    ],
+    "subtitle": "subtitles.starfallen.astraeon_hurt"
+  },
+  "astraeon_death": {
+    "sounds": [
+      {
+        "name": "starfallen:astraeon_death",
+        "attenuation_distance": 128
+      }
+    ],
+    "subtitle": "subtitles.starfallen.astraeon_death"
+  },
+  "astraeon_beam_charge": {
+    "sounds": [
+      {
+        "name": "starfallen:astraeon_beam_charge",
+        "attenuation_distance": 64
+      }
+    ],
+    "subtitle": "subtitles.starfallen.astraeon_beam_charge"
+  },
+  "astraeon_beam": {
+    "sounds": [
+      {
+        "name": "starfallen:astraeon_beam",
+        "attenuation_distance": 64
+      }
+    ],
+    "subtitle": "subtitles.starfallen.astraeon_beam"
+  },
+  "astraeon_slam": {
+    "sounds": [
+      {
+        "name": "starfallen:astraeon_slam",
+        "attenuation_distance": 64
+      }
+    ],
+    "subtitle": "subtitles.starfallen.astraeon_slam"
+  },
+  "astraeon_awaken": {
+    "sounds": [
+      {
+        "name": "starfallen:astraeon_awaken",
+        "attenuation_distance": 128
+      }
+    ],
+    "subtitle": "subtitles.starfallen.astraeon_awaken"
+  },
+  "hammer_slam": {
+    "sounds": [
+      {
+        "name": "starfallen:hammer_slam",
+        "attenuation_distance": 32
+      }
+    ],
+    "subtitle": "subtitles.starfallen.hammer_slam"
+  },
+  "blade_dash": {
+    "sounds": [
+      "starfallen:blade_dash"
+    ],
+    "subtitle": "subtitles.starfallen.blade_dash"
+  },
+  "rift_blink": {
+    "sounds": [
+      "starfallen:rift_blink"
+    ],
+    "subtitle": "subtitles.starfallen.rift_blink"
+  },
+  "singularity_hum": {
+    "sounds": [
+      {
+        "name": "starfallen:singularity_hum",
+        "attenuation_distance": 24
+      }
+    ],
+    "subtitle": "subtitles.starfallen.singularity_hum"
+  },
+  "singularity_collapse": {
+    "sounds": [
+      {
+        "name": "starfallen:singularity_collapse",
+        "attenuation_distance": 48
+      }
+    ],
+    "subtitle": "subtitles.starfallen.singularity_collapse"
+  },
+  "scythe_throw": {
+    "sounds": [
+      "starfallen:scythe_throw"
+    ],
+    "subtitle": "subtitles.starfallen.scythe_throw"
+  },
+  "tether_fire": {
+    "sounds": [
+      "starfallen:tether_fire"
+    ],
+    "subtitle": "subtitles.starfallen.tether_fire"
+  },
+  "star_bolt": {
+    "sounds": [
+      "starfallen:star_bolt1",
+      "starfallen:star_bolt2"
+    ],
+    "subtitle": "subtitles.starfallen.star_bolt"
+  },
+  "totem_nova": {
+    "sounds": [
+      {
+        "name": "starfallen:totem_nova",
+        "attenuation_distance": 48
+      }
+    ],
+    "subtitle": "subtitles.starfallen.totem_nova"
+  },
+  "double_jump": {
+    "sounds": [
+      "starfallen:double_jump"
+    ],
+    "subtitle": "subtitles.starfallen.double_jump"
+  },
+  "spike_trap": {
+    "sounds": [
+      "starfallen:spike_trap"
+    ],
+    "subtitle": "subtitles.starfallen.spike_trap"
+  },
+  "flame_jet": {
+    "sounds": [
+      "starfallen:flame_jet"
+    ],
+    "subtitle": "subtitles.starfallen.flame_jet"
+  },
+  "seal_break": {
+    "sounds": [
+      {
+        "name": "starfallen:seal_break",
+        "attenuation_distance": 64
+      }
+    ],
+    "subtitle": "subtitles.starfallen.seal_break"
+  },
+  "brazier_ignite": {
+    "sounds": [
+      "starfallen:brazier_ignite"
+    ],
+    "subtitle": "subtitles.starfallen.brazier_ignite"
+  },
+  "telescope_gaze": {
+    "sounds": [
+      "starfallen:telescope_gaze"
+    ],
+    "subtitle": "subtitles.starfallen.telescope_gaze"
+  },
+  "egg_hatch": {
+    "sounds": [
+      "starfallen:egg_hatch"
+    ],
+    "subtitle": "subtitles.starfallen.egg_hatch"
+  },
+  "crystal_break": {
+    "sounds": [
+      "starfallen:crystal_break1",
+      "starfallen:crystal_break2"
+    ],
+    "subtitle": "subtitles.starfallen.crystal_break"
+  },
+  "boss_music": {
+    "sounds": [
+      {
+        "name": "starfallen:boss_music",
+        "stream": true
+      }
+    ]
+  }
+}

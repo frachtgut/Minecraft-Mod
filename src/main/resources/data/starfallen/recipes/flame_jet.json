@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "VVV",
+    "VFV",
+    "VRV"
+  ],
+  "key": {
+    "V": {
+      "item": "starfallen:void_bricks"
+    },
+    "F": {
+      "item": "minecraft:fire_charge"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "starfallen:flame_jet",
+    "count": 1
+  }
+}

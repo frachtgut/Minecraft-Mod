@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "item": "starfallen:voidsteel_ingot"
+    },
+    "title": {
+      "translate": "advancements.starfallen.into_the_void.title"
+    },
+    "description": {
+      "translate": "advancements.starfallen.into_the_void.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "voidsteel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "starfallen:voidsteel_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "starfallen:starforged",
+  "requirements": [
+    [
+      "voidsteel"
+    ]
+  ],
+  "rewards": {
+    "experience": 50
+  }
+}

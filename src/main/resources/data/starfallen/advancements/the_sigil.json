@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "starfallen:sigil_of_the_fallen_star"
+    },
+    "title": {
+      "translate": "advancements.starfallen.the_sigil.title"
+    },
+    "description": {
+      "translate": "advancements.starfallen.the_sigil.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sigil": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "starfallen:sigil_of_the_fallen_star"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "parent": "starfallen:the_sanctum",
+  "requirements": [
+    [
+      "sigil"
+    ]
+  ]
+}

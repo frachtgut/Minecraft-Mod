@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "starfallen:void_bricks"
+    }
+  },
+  "result": {
+    "item": "starfallen:void_pillar",
+    "count": 2
+  }
+}

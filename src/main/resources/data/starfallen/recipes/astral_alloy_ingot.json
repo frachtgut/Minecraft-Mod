@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "starfallen:meteoric_iron_ingot"
+    },
+    {
+      "item": "starfallen:meteoric_iron_ingot"
+    },
+    {
+      "item": "starfallen:stardust"
+    },
+    {
+      "item": "starfallen:stardust"
+    },
+    {
+      "item": "starfallen:stardust"
+    },
+    {
+      "item": "starfallen:stardust"
+    },
+    {
+      "item": "starfallen:star_fragment"
+    }
+  ],
+  "result": {
+    "item": "starfallen:astral_alloy_ingot",
+    "count": 2
+  }
+}

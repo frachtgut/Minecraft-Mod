@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "armed=true,extended=true": {
+      "model": "starfallen:block/spike_trap_extended"
+    },
+    "armed=false,extended=true": {
+      "model": "starfallen:block/spike_trap_extended"
+    },
+    "armed=true,extended=false": {
+      "model": "starfallen:block/spike_trap_armed"
+    },
+    "armed=false,extended=false": {
+      "model": "starfallen:block/spike_trap"
+    }
+  }
+}

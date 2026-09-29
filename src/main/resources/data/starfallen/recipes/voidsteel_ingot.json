@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "starfallen:astral_alloy_ingot"
+    },
+    {
+      "item": "starfallen:astral_alloy_ingot"
+    },
+    {
+      "item": "starfallen:void_essence"
+    },
+    {
+      "item": "starfallen:void_essence"
+    },
+    {
+      "item": "starfallen:void_essence"
+    },
+    {
+      "item": "starfallen:void_essence"
+    }
+  ],
+  "result": {
+    "item": "starfallen:voidsteel_ingot",
+    "count": 2
+  }
+}

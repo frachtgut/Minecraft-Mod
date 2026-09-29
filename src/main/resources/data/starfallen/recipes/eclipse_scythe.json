@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "EEH",
+    " V ",
+    "V  "
+  ],
+  "key": {
+    "E": {
+      "item": "starfallen:eclipse_shard"
+    },
+    "H": {
+      "item": "starfallen:heart_of_astraeon"
+    },
+    "V": {
+      "item": "starfallen:voidsteel_ingot"
+    }
+  },
+  "result": {
+    "item": "starfallen:eclipse_scythe",
+    "count": 1
+  }
+}

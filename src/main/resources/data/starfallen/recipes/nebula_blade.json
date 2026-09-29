@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " A ",
+    "NAN",
+    " M "
+  ],
+  "key": {
+    "A": {
+      "item": "starfallen:astral_alloy_ingot"
+    },
+    "N": {
+      "item": "starfallen:nebula_gel"
+    },
+    "M": {
+      "item": "starfallen:meteoric_iron_ingot"
+    }
+  },
+  "result": {
+    "item": "starfallen:nebula_blade",
+    "count": 1
+  }
+}

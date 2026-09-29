@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "starfallen:heart_of_astraeon"
+    },
+    "title": {
+      "translate": "advancements.starfallen.starfallen.title"
+    },
+    "description": {
+      "translate": "advancements.starfallen.starfallen.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "slain": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "starfallen:seal_breaker",
+  "requirements": [
+    [
+      "slain"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  }
+}

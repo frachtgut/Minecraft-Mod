@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "starfallen:void_bricks"
+  },
+  "result": "starfallen:chiseled_void_bricks",
+  "count": 1
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "starfallen:meteoric_iron_block"
+    }
+  ],
+  "result": {
+    "item": "starfallen:meteoric_iron_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "starfallen:block/astral_bricks",
+    "side": "starfallen:block/astral_bricks",
+    "top": "starfallen:block/astral_bricks"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "starfallen:block/astral_brazier"
+    },
+    "lit=true": {
+      "model": "starfallen:block/astral_brazier_lit"
+    }
+  }
+}

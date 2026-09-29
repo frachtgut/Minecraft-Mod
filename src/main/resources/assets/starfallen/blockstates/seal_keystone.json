@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "active=true": {
+      "model": "starfallen:block/seal_keystone"
+    },
+    "active=false": {
+      "model": "starfallen:block/seal_keystone_inactive"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "starfallen:add_table",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/woodland_mansion"
+    }
+  ],
+  "table": "starfallen:inject/rare"
+}

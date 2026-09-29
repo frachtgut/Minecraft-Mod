@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "decorations",
+  "pattern": [
+    "I I",
+    "IDI",
+    " I "
+  ],
+  "key": {
+    "I": {
+      "item": "starfallen:meteoric_iron_ingot"
+    },
+    "D": {
+      "item": "starfallen:stardust"
+    }
+  },
+  "result": {
+    "item": "starfallen:astral_brazier",
+    "count": 1
+  }
+}

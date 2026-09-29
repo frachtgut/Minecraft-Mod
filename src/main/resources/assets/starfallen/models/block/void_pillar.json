@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "starfallen:block/void_pillar_top",
+    "side": "starfallen:block/void_pillar"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "AFA",
+    " M ",
+    " M "
+  ],
+  "key": {
+    "A": {
+      "item": "starfallen:astral_alloy_ingot"
+    },
+    "F": {
+      "item": "starfallen:star_fragment"
+    },
+    "M": {
+      "item": "starfallen:meteoric_iron_ingot"
+    }
+  },
+  "result": {
+    "item": "starfallen:starbreaker",
+    "count": 1
+  }
+}

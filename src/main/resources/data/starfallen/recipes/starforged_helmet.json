@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XXX",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "starfallen:astral_alloy_ingot"
+    }
+  },
+  "result": {
+    "item": "starfallen:starforged_helmet",
+    "count": 1
+  }
+}

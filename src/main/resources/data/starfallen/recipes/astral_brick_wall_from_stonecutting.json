@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "starfallen:astral_bricks"
+  },
+  "result": "starfallen:astral_brick_wall",
+  "count": 1
+}
